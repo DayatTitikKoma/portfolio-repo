@@ -553,3 +553,79 @@ button:hover {
   margin-bottom: 50px; /* Menambahkan jarak bawah antar section */
 }
 
+
+/* Gaya Default (untuk desktop) */
+body {
+  font-size: 18px;
+}
+.section {
+  padding: 40px 80px;
+}
+
+/* Tampilan Tablet */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .section {
+    padding: 30px 40px;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk layar lebih kecil */
+  }
+}
+
+/* Tampilan Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .section {
+    padding: 20px 20px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Satu kolom untuk mobile */
+  }
+}
+
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tiga kolom di desktop */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom di tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Satu kolom di mobile */
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

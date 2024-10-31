@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namskuyy - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="#home" data-section="home">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#skills" data-section="skill">Skills</a></li>
+            <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Namus Hidayat</h1>
+        <h2>
+          <span id="dynamic-text">Frontend Developer</span>
+        </h2>
+        <p>
+          Hi, I’m Namus Hidayat, a 5th-semester Informatics Engineering student
+          passionate about frontend development. I love crafting responsive and
+          user-friendly web interfaces, with a keen interest in UI/UX design.
+          Always eager to learn and improve, I enjoy turning ideas into seamless
+          digital experiences.
+        </p>
+        <div class="buttons">
+          <a href="mailto:namushidayat0@gmail.com" class="btn btn-primary"
+            >Hire Me</a
+          >
+          <a href="https://wa.me/085803448391" class="btn btn-secondary"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/pprofile.png" alt="Namuss Hidayat" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Namus Hidayat, a 5th-semester Informatics Engineering student passionate about frontend development. I create clean, functional, and responsive web interfaces using HTML, CSS, JavaScript, and React.js. Additionally, I have an interest in UI/UX design and am familiar with tools like Figma. I'm eager to learn more about the latest trends in web development and design as I continue my studies and work on new projects.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+      <h2>Skills</h2>
+  
+      <div class="skill-sections">
+          <!-- Hard Skills Section -->
+          <div class="hard-skill">
+              <h3>Hard Skills</h3>
+              <div class="skill-grid">
+                  <div class="skill-item" data-skill="HTML">
+                      <img src="images/icons8-html-48.png" alt="HTML Logo">
+                      <p>HTML</p>
+                  </div>
+                  <div class="skill-item" data-skill="CSS">
+                      <img src="images/icons8-css-48.png" alt="CSS Logo">
+                      <p>CSS</p>
+                  </div>
+                  <div class="skill-item" data-skill="JavaScript">
+                      <img src="images/icons8-javascript-50.png" alt="JavaScript Logo">
+                      <p>JavaScript</p>
+                  </div>
+                  <div class="skill-item" data-skill="Figma">
+                      <img src="images/icons8-figma-50.png" alt="Figma Logo">
+                      <p>Figma</p>
+                  </div>
+                  <div class="skill-item" data-skill="Canva">
+                      <img src="images/icons8-canva-50.png" alt="Canva Logo">
+                      <p>Canva</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Soft Skills Section -->
+          <div class="soft-skill">
+              <h3>Soft Skills</h3>
+              <div class="skill-grid">
+                  <div class="skill-item" data-skill="Communication">
+                      <img src="images/icons8-communication-48.png" alt="Communication Logo">
+                      <p>Communication</p>
+                  </div>
+                  <div class="skill-item" data-skill="Problem Solving">
+                      <img src="images/icons8-problem-solving-100.png" alt="Problem Solving Logo">
+                      <p>Problem Solving</p>
+                  </div>
+                  <div class="skill-item" data-skill="Teamwork">
+                      <img src="images/icons8-team-work-64.png" alt="Teamwork Logo">
+                      <p>Teamwork</p>
+                  </div>
+                  <div class="skill-item" data-skill="Time Management">
+                      <img src="images/icons8-time-management-64.png" alt="Time Management Logo">
+                      <p>Time Management</p>
+                  </div>
+                  <div class="skill-item" data-skill="Adaptability">
+                      <img src="images/icons8-adaptation-50.png" alt="Adaptability Logo">
+                      <p>Adaptability</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+
+    <section id="portfolio" class="portfolio-section section">
+      <h2>Portfolio</h2>
+      <div class="portfolio-categories">
+        <button class="category-btn active" onclick="filterProjects('web')">
+          Web Development
+        </button>
+        <button class="category-btn" onclick="filterProjects('app')">
+          Design Project
+        </button>
+        <button class="category-btn" onclick="filterProjects('design')">
+          UI/UX Design
+        </button>
+      </div>
+    
+      <div class="portfolio-grid">
+        <div class="portfolio-item web">
+          <img src="images/project1.jpg" alt="Web Project 1" />
+          <h3>Web Project 1</h3>
+          <p>Responsive website using HTML, CSS, JS.</p>
+        </div>
+        <div class="portfolio-item web">
+          <img src="images/project2.jpg" alt="Web Project 2" />
+          <h3>Web Project 2</h3>
+          <p>Website built with React and Node.js.</p>
+        </div>
+        <div class="portfolio-item app">
+          <img src="images/port desain.png" alt="App Project 1" />
+          <h3>Design Project</h3>
+          <p>Brochure design on Instagram generation and product design.</p>
+        </div>
+        <div class="portfolio-item design">
+          <img src="images/project4.jpg" alt="UI/UX Design" />
+          <h3>UI/UX Design Project</h3>
+          <p>Redesign of a business website with user-focused UX.</p>
+        </div>
+        <div class="portfolio-item design">
+          <img src="images/project6.jpg" alt="UI/UX Project" />
+          <h3>UI/UX Project 2</h3>
+          <p>Complete UI design for an e-commerce website.</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <div id="response-message" class="response-message"></div>
+    </section>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/nmssdytt"
+          ><img src="images/icons8-fb-48.png" alt="Facebook"
+        /></a>
+        <a href="https://x.com/namsscuy_?t=4R1MHtGKO1zEIZHrNo5y8A&s=09"
+          ><img src="images/icons8-twitter-48.png" alt="Twitter"
+        /></a>
+        <a
+          href="https://www.instagram.com/nmsdd__/profilecard/?igsh=MWprN2c4bDdtZ3g1dg=="
+          ><img src="images/icons8-ig-48.png" alt="LinkedIn"
+        /></a>
+      </div>
+      <p>&copy; 2024 Namuss Skuy Portfolio</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p id="popup-text"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      const links = document.querySelectorAll("nav a");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetSection = document.querySelector(targetId);
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script>
+      const texts = ["Frontend Developer", "UI/UX Designer"]; // Array teks
+      let index = 0; // Indeks teks saat ini
+      const dynamicText = document.getElementById("dynamic-text"); // Ambil elemen teks
+
+      function changeText() {
+        dynamicText.style.opacity = 0; // Mulai dengan mengurangi opacity
+
+        setTimeout(() => {
+          // Ganti teks setelah transisi selesai
+          dynamicText.textContent = texts[index];
+          index = (index + 1) % texts.length; // Perbarui indeks
+
+          dynamicText.style.opacity = 1; // Kembalikan opacity
+        }, 500); // Waktu transisi yang sama dengan CSS
+      }
+
+      // Ganti teks setiap 3 detik
+      setInterval(changeText, 3000);
+    </script>
+  </body>
+</html>
